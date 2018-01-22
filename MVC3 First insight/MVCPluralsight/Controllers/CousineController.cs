@@ -17,7 +17,7 @@ namespace MVCPluralsight.Controllers
         [HttpGet]
         public ActionResult Search(string city,string name="*" )
         {
-            throw new Exception("Ooops! unknown error occured, Sorry.");
+            //throw new Exception("Ooops! unknown error occured, Sorry.");
             name = Server.HtmlEncode(name);
             city = Server.HtmlEncode(city);
             if (name == "*")
